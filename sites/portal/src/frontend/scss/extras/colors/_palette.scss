@@ -1,0 +1,14 @@
+///
+/// Color palette and schemes
+///
+
+// Named colors
+// Do not add any color here, add or override color in cunningham.cjs instead.
+// ---------
+
+@use '../../vendors/cunningham-tokens' as tokens;
+
+$palette: recursive-map-merge(
+    $palette,
+    map-get(tokens.$themes, 'default', 'theme', 'colors')
+);
