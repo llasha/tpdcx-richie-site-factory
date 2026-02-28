@@ -146,7 +146,7 @@ class Base(StyleguideMixin, DRFMixin, RichieCoursesConfigurationMixin, Configura
     # Security
     # ALLOWED_HOSTS = values.ListValue([])
     # In the Base class
-    ALLOWED_HOSTS = ["lms.tpdc.ge", "lms.logarith.me", "localhost"]
+    ALLOWED_HOSTS = ["richie.logarith.me", "lms.tpdc.ge", "lms.logarith.me", "localhost"]
 
     SECRET_KEY = values.SecretValue()
     # System check reference:
